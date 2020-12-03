@@ -679,6 +679,10 @@ body {
     bottom: 0;
   }
 
+  .content-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
   .jar {
     bottom: 0;
     left: 0;
