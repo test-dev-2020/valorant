@@ -391,15 +391,15 @@ body {
   z-index: 10;
   right: 0rem;
   top: 0;
-  -webkit-animation: slider 6s linear infinite;
-          animation: slider 6s linear infinite;
+  -webkit-animation: slider 9s linear infinite;
+          animation: slider 9s linear infinite;
 }
 
 .slide {
   position: relative;
   z-index: 100;
-  -webkit-animation: appear 2s linear infinite;
-          animation: appear 2s linear infinite;
+  -webkit-animation: appear 3s ease-out infinite;
+          animation: appear 3s ease-out infinite;
 }
 
 .char-1 {
@@ -408,13 +408,15 @@ body {
 }
 
 .char-2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  visibility: hidden;
 }
 
 .char-3 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  visibility: hidden;
 }
 
 @-webkit-keyframes slider {
@@ -675,6 +677,11 @@ body {
     width: 100vw;
     top: auto;
     bottom: 0;
+  }
+
+  .jar {
+    bottom: 0;
+    left: 0;
   }
 
   .char-bg {

@@ -133,21 +133,23 @@ body {
   z-index: 10;
   right: 0rem;
   top: 0;
-  animation: slider 6s linear infinite;
+  animation: slider 9s linear infinite;
 }
 .slide {
   position: relative;
   z-index: 100;
-  animation: appear 2s linear infinite;
+  animation: appear 3s ease-out infinite;
 }
 .char-1 {
   animation-delay: 0s;
 }
 .char-2 {
-  animation-delay: 2s;
+  animation-delay: 3s;
+  visibility: hidden;
 }
 .char-3 {
-  animation-delay: 4s;
+  animation-delay: 6s;
+  visibility: hidden;
 }
 
 @keyframes slider {
@@ -322,6 +324,10 @@ body {
     width: 100vw;
     top: auto;
     bottom: 0;
+  }
+  .jar {
+    bottom: 0;
+    left: 0;
   }
   .char-bg {
     display: none;
