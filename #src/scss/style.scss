@@ -1,0 +1,143 @@
+@import 'libs/normalize';
+@import 'fonts.scss';
+
+body {
+  line-height: 1.2;
+  color: #fff;
+}
+:root {
+  font-size: 1px;
+}
+
+.content {
+  position: relative;
+  background-color: #171f35;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.bg {
+  display: none;
+}
+.container {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.content__inner {
+  display: flex;
+  flex-direction: column;
+}
+.content__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
+
+.terms {
+  margin-left: 87rem;
+  font-size: 30rem;
+  cursor: pointer;
+  z-index: 100;
+}
+.right-side {
+ 
+}
+
+
+.content__steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.step {
+  position: relative;
+ 
+}
+.content__footer {
+  text-align: center;
+  padding: 12px 20px;
+  background: #0e1321;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Promo-Light';
+  flex-grow: 1;
+
+  p {
+    font-size: 16rem;
+    margin: 6rem 0;
+  }
+}
+
+//start popup
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(14, 20, 28, 0.7);
+  z-index: 200;
+  visibility: hidden;
+  &.visible {
+    visibility: visible;
+  }
+}
+.popup-box {
+  position: relative;
+  max-width: 1110rem;
+  padding: 55rem 45rem;
+  font-weight: 400;
+  font-size: 32rem;
+  text-align: center;
+  background: #0e141c;
+  border: 2px solid #92a7c2;
+  border-radius: 35px;
+  p {
+    margin: 15rem 0;
+  }
+}
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  right: -30rem;
+  top: -30rem;
+  background: linear-gradient(180deg, #fe7530 0%, #ffa72e 100%);
+  width: 70rem;
+  height: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 48rem;
+  font-weight: 900;
+  border-radius: 50%;
+}
+.bonus-code {
+  span {
+    color: #f7941d;
+  }
+}
+
+//end popup
