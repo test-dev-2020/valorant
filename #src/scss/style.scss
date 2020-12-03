@@ -133,65 +133,54 @@ body {
   z-index: 10;
   right: 0rem;
   top: 0;
+  animation: slider 6s linear infinite;
 }
-// .char-1 {
-//   animation: appear ease-in-out 2s infinite;
-// }
-// .char-2 {
-//   animation: appear ease-in-out 2s infinite;
-// }
-// .char-3 {
-//   animation: appear ease-in-out 2s infinite;
-// }
+.slide {
+  position: relative;
+  z-index: 100;
+  animation: appear 2s linear infinite;
+}
+.char-1 {
+  animation-delay: 0s;
+}
+.char-2 {
+  animation-delay: 2s;
+}
+.char-3 {
+  animation-delay: 4s;
+}
 
+@keyframes slider {
+  0% {
+    visibility: hidden;
+    opacity: 0.5;
+  }
+  2% {
+    visibility: visible;
+    opacity: 1;
+  }
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+  33%,
+  100% {
+    visibility: visible;
+    opacity: 0;
+  }
+}
 @keyframes appear {
   0% {
     opacity: 0;
     transform: translateX(200rem);
   }
-  30% {
+  50% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: translateX(-300rem);
+    transform: translateX(-100rem);
   }
-}
-
-.home-swiper-slide {
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.home-1 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home.jpg) no-repeat 50%;
-}
-
-.home-2 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home2.jpg) no-repeat 50%;
-}
-
-.home-3 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home3.jpg) no-repeat 50%;
-}
-
-.home-4 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home4.jpg) no-repeat 50%;
-}
-
-.home-5 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home5.jpg) no-repeat 50%;
 }
 
 .content__steps {

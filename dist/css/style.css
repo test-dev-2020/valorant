@@ -391,6 +391,74 @@ body {
   z-index: 10;
   right: 0rem;
   top: 0;
+  -webkit-animation: slider 6s linear infinite;
+          animation: slider 6s linear infinite;
+}
+
+.slide {
+  position: relative;
+  z-index: 100;
+  -webkit-animation: appear 2s linear infinite;
+          animation: appear 2s linear infinite;
+}
+
+.char-1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.char-2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.char-3 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    visibility: hidden;
+    opacity: 0.5;
+  }
+
+  2% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  33%, 100% {
+    visibility: visible;
+    opacity: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    visibility: hidden;
+    opacity: 0.5;
+  }
+
+  2% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  33%, 100% {
+    visibility: visible;
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes appear {
@@ -400,14 +468,14 @@ body {
             transform: translateX(200rem);
   }
 
-  30% {
+  50% {
     opacity: 1;
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translateX(-300rem);
-            transform: translateX(-300rem);
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
   }
 }
 
@@ -418,48 +486,15 @@ body {
             transform: translateX(200rem);
   }
 
-  30% {
+  50% {
     opacity: 1;
   }
 
   100% {
     opacity: 0;
-    -webkit-transform: translateX(-300rem);
-            transform: translateX(-300rem);
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
   }
-}
-
-.home-swiper-slide {
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.home-1 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home.jpg) no-repeat 50%;
-}
-
-.home-2 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home2.jpg) no-repeat 50%;
-}
-
-.home-3 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home3.jpg) no-repeat 50%;
-}
-
-.home-4 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home4.jpg) no-repeat 50%;
-}
-
-.home-5 {
-  background: url(https://nuovo.com.br/clientes/nexxera/relatorio/images/home5.jpg) no-repeat 50%;
 }
 
 .content__steps {
