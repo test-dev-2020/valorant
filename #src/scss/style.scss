@@ -86,6 +86,7 @@ body {
     -webkit-text-stroke: 1px white;
     top: 20rem;
     right: -15rem;
+    opacity: 0.5s;
   }
 }
 .left-side__sub-title {
@@ -133,22 +134,22 @@ body {
   z-index: 10;
   right: 0rem;
   top: 0;
-  animation: slider 9s linear infinite;
+  animation: slider 18s linear infinite;
 }
 .slide {
   position: relative;
   z-index: 100;
-  animation: appear 3s ease-out infinite;
+  animation: appear 6s ease-out infinite;
 }
 .char-1 {
   animation-delay: 0s;
 }
 .char-2 {
-  animation-delay: 3s;
+  animation-delay: 6s;
   visibility: hidden;
 }
 .char-3 {
-  animation-delay: 6s;
+  animation-delay: 12s;
   visibility: hidden;
 }
 
@@ -176,8 +177,14 @@ body {
     opacity: 0;
     transform: translateX(200rem);
   }
-  50% {
+  20% {
     opacity: 1;
+    transform: translateX(-60rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-60rem);
   }
   100% {
     opacity: 0;
@@ -206,8 +213,10 @@ body {
   padding: 0rem 20rem;
   &::before {
     position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.3);
     content: '';
     left: 0;
+    z-index: -1;
     top: 0;
     right: 0;
     bottom: 0;
